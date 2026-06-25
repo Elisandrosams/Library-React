@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 import Rating from "../components/UI/Rating";
 import BookPrice from "../components/UI/BookPrice";
@@ -32,7 +32,7 @@ const BookInfo = ({ books, addToCart, cart }) => {
             </div>
             <div className="book__selected">
               <figure className="book__selected--figure">
-                <img src={book.url} className="book__selected--img" />
+                <img src={book.url} className="book__selected--img" alt="Book Image"/>
               </figure>
               <div className="book__selected--description">
                 <h2 className="book__selected--title">{book.title}</h2>
